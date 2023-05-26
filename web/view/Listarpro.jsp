@@ -48,8 +48,8 @@
            
            
             <td class ="text-center" >
-                <a class="btn btn-warning" href="">EDITAR</a>  
-                <a class="btn btn-danger" href="">ELIMINAR</a>
+                <a class="btn btn-warning" " href="../ControladorPrograma?accion=editar&id=<%=usu.getCodprograma()%>">EDITAR</a>  
+             <a class="btn btn-warning" href="../ControladorPrograma?accion=eliminar&id=<%=usu.getCodprograma()%>">ELIMINAR</a>
            
                
                

@@ -64,22 +64,29 @@ public class ControladorPrograma extends HttpServlet {
          acceso = agregarpro;
         }if(action.equalsIgnoreCase("AgregarP"))
         {
-            
-            
-            
-            
             int codp = Integer.parseInt(request.getParameter("txtcodpro"));
             String nompro = request.getParameter("txtnombrepro");
             p.setCodprograma(codp);
             p.setNomprograma(nompro);
             pdao.registrarpro(p);
            
-           
-            RequestDispatcher view=request.getRequestDispatcher(acceso);
-            view.forward(request, response);
-       }
+           acceso=listarpro;
+         
+       }else if(action.equalsIgnoreCase("eliminar")){
+        
+            int id=Integer.parseInt(request.getParameter("id"));
+            p.setCodprograma(id);
+            pdao.eliminarpro(id);
+            
+            
+            acceso=listarpro;
+            
+      
     }
-
+          RequestDispatcher view=request.getRequestDispatcher(acceso);
+            view.forward(request, response);
+    }
+   
     /**
      * Handles the HTTP <code>POST</code> method.
      *

@@ -8,46 +8,19 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link href="style.css" rel="stylesheet" type="text/css"/>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> 
         <title>JSP Page</title>
     </head>
     <body>
-        <h1>Hello World!</h1>
+        <h1>Bienvenidos al sistema</h1>
  
-       <div class="container">    
-            <div class col-lg-6">
-                <form action="ControladorAprendiz">
-                <label for="NumDoc">Digite su numero de documento</label>
-                <input type="text" id="Docu" name="txtdoc">
-
-                <br>
-                 <label for="nombres">Digite sus Nombres</label>
-                <input type="text" id="Nombrea" name="txtnom">
-                
-                
-
-                 <br>
-                 
-                 <label for="Apellido">Digite sus Apellidos</label>
-                <input type="text" id="Apellidoa" name="txtape">
-
-                
-
-                 <br>
-
-                <label for="correo">Digite su correo electronico</label>
-                <input type="text" id="correoa" name="txtcorreo">
-
-                 <br>
-
-                <label for="telefono">Digite su numero de telefono</label>
-                <input type="number" id="Numcontacto" name="txtcon">
-                
-                <input class="btn-btn-primary" type="submit" name="accion" value="AgregarP">
-
-                
-
-               </form> 
-            </div>
+       
+        <button class="button" ><a href="http://localhost:8080/Gestionar/view/Faprendiz.jsp">aprendiz</a></button>
+       <button class="button" ><a href="http://localhost:8080/Gestionar/view/FPrograma.jsp">programa</a></button>
+       <button class="button" ><a href="http://localhost:8080/Gestionar/view/Fficha.jsp">Ficha</a></button>
+        
+     
+        
                    </body> 
 </html>

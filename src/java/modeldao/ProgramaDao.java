@@ -80,7 +80,16 @@ public class ProgramaDao  implements  MePrograma{
 
     @Override
     public boolean eliminarpro(int id) {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+        String sql="delete from programa where codpro="+id;
+        try{
+            con=cn.getConnection(); 
+            ps=con.prepareStatement(sql); 
+            ps.executeUpdate(); 
+            JOptionPane.showMessageDialog(null, "programa Eliminado");
+        }catch(Exception e){
+            JOptionPane.showMessageDialog(null, "programa no Eliminado");
+        }
+        return false;
     }
     
    

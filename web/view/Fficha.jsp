@@ -32,8 +32,6 @@
       
                  <br>
 
-                     
-                
                 <label>Nombre programa</label> 
                 
                 
@@ -46,11 +44,6 @@
                     <% for(Programa li:lista){  %> 
                     <option value="<%=li.getCodprograma()%>"><%=li.getNomprograma()%></option> 
                     <%}%>
-                    
-                    
-                    
-                  
-                    
                     
                 </select> 
                     
@@ -69,10 +62,7 @@
                     <option value="<%=li.getNombrea()%>"><%=li.getDocu()%></option> 
                     <%}%>
                     
-                
-                                </select> 
-
-                
+                                </select>
                 
                 <input class="btn-btn-primary" type="submit" name="accion" value="Agregarficha">
                 
